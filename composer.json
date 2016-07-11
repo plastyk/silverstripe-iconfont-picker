@@ -1,6 +1,6 @@
 {
-  "name": "moe/font-awesome",
-  "description": "A simple form field for selecting font-awesome classes in the CMS.",
+  "name": "anselmdk/silverstripe-iconfont-picker",
+  "description": "WIP - turning peavers/silverstripe-font-awesome into a generic icon font picker",
   "keywords": [
     "font-awesome"
   ],
