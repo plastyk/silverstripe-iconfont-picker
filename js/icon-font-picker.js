@@ -10,7 +10,8 @@
             onmatch: function () {
                 $('.icp-auto').iconpicker({
                     hideOnSelect: true,
-                    inputSearch: true
+                    inputSearch: true,
+                    //icons: ['fa-github', 'fa-heart', 'fa-html5', 'fa-css3'],
                 });
             }
         });

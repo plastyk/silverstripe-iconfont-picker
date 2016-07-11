@@ -1,3 +1,3 @@
 <?php
 
-define('FONT_AWESOME_DIR', ltrim(Director::makeRelative(realpath(__DIR__)), DIRECTORY_SEPARATOR));
+define('ICONFONT_PICKER_DIR', ltrim(Director::makeRelative(realpath(__DIR__)), DIRECTORY_SEPARATOR));
