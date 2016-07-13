@@ -1,6 +1,4 @@
-<div class="form-group">
-  <div class="input-group">
-    <input $AttributesHTML />
-    <span class="input-group-addon"></span>
-  </div>
+<div class="IconFontPickerField">
+  <input $AttributesHTML />
+  <i class="picker-target fa-3x icofont $Value"></i>
 </div>

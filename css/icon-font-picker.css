@@ -8,3 +8,12 @@
     width: 512px;
 }
 
+.IconFontPickerField .picker-target {
+    float: left;
+}
+
+.IconFontPickerField input {
+    float: left;
+    width: 200px!important;
+    margin-right: 12px!important;
+}

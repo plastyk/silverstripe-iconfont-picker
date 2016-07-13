@@ -1,6 +1,6 @@
 {
   "name": "anselmdk/silverstripe-iconfont-picker",
-  "description": "WIP - turning peavers/silverstripe-font-awesome into a generic icon font picker",
+  "description": "generic icon font picker based on peavers/silverstripe-font-awesome",
   "keywords": [
     "font-awesome"
   ],
@@ -9,6 +9,10 @@
     {
       "name": "Chris Turner",
       "email": "chris.turner@minedu.govt.nz"
+    },
+    {
+      "name": "Anselm Christophersen",
+      "email": "ac@anselm.dk"
     }
   ],
   "type": "silverstripe-module",
