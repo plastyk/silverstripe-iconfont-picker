@@ -60,6 +60,30 @@ class IconFontPickerField extends TextField
         $this->use_fa = $boolean;
     }
 
+    /**
+     * @return bool
+     */
+    public function getUseFa()
+    {
+        return $this->use_fa;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAvailableIconsJson()
+    {
+        return json_encode($this->available_icons);
+    }
+
+    /**
+     * @return string
+     */
+    public function getCustomFontBaseClass()
+    {
+        return $this->customFontBaseClass;
+    }
+
 
     /**
      * @return string
@@ -91,14 +115,7 @@ class IconFontPickerField extends TextField
 
         // Module
         Requirements::css(ICONFONT_PICKER_DIR . '/css/icon-font-picker.css');
-        Requirements::javascriptTemplate(
-            ICONFONT_PICKER_DIR . '/js/icon-font-picker.js',
-            [
-                'UseFa' => $this->use_fa ? 'true' : 'false',
-                'AvailableIcons' => json_encode($this->available_icons),
-                'CustomFontBaseClass' => $this->customFontBaseClass
-            ]
-        );
+        Requirements::javascript(ICONFONT_PICKER_DIR . '/js/icon-font-picker.js');
 
         Requirements::set_force_js_to_bottom(true);
 

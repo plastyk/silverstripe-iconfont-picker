@@ -6,17 +6,19 @@
          *
          * Load the icon picker
          */
-        $('.icp-auto').entwine({
+        $('.IconFontPickerField').entwine({
             onmatch: function () {
-                var icons = JSON.parse('$AvailableIcons');
-                if($UseFa) {
+                var $field = $('.IconFontPickerField');
+
+                var icons = JSON.parse($field.attr('data-AvailableIcons'));
+                if($field.attr('data-UseFa')) {
                     icons = $.merge(
                         icons,
                         $.iconpicker.defaultOptions.icons
                     );
                 }
 
-                var customFontBaseClass = '$CustomFontBaseClass';
+                var customFontBaseClass = $field.attr('data-CustomFontBaseClass');
                 var fullClassFormatter = null;
                 if (customFontBaseClass.length) {
                     fullClassFormatter = function(val) {
