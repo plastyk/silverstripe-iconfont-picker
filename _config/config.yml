@@ -1,6 +1,4 @@
 ---
 Name: font-awesome
 ---
-ContentController:
-  extensions:
-   - FontAwesomeControllerExtension
+
