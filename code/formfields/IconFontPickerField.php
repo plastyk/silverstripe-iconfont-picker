@@ -15,7 +15,7 @@ class IconFontPickerField extends TextField
     /**
      * @var string
      */
-    private $customFontBaseClass = '';
+    private $customFontBaseClass = 'fa';
 
     /**
      * @var array
@@ -104,14 +104,12 @@ class IconFontPickerField extends TextField
 
         //Libraries
         Requirements::css(ICONFONT_PICKER_DIR . '/css/lib/bootstrap.min.css');
-        Requirements::css(ICONFONT_PICKER_DIR . '/css/lib/font-awesome.min.css');
-        Requirements::css(ICONFONT_PICKER_DIR . '/css/lib/font-awesome-iconpicker.min.css');
+        Requirements::css(ICONFONT_PICKER_DIR . '/css/lib/font-awesome-iconpicker.css');
         Requirements::javascript(ICONFONT_PICKER_DIR . '/js/lib/font-awesome-iconpicker.min.js');
 
         if ($this->customFontURI) {
             Requirements::css($this->customFontURI);
         }
-
 
         // Module
         Requirements::css(ICONFONT_PICKER_DIR . '/css/icon-font-picker.css');
